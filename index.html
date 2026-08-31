@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adventure: impresiones, banners, viniles, diseños, personalizados, tecnología y productos para tu hogar o negocio.">
+    <meta name="theme-color" content="#15803d">
+
+    <title>Adventure | Impresiones, diseño y tecnología</title>
+
+    <!-- Archivos preparados para la siguiente etapa -->
+    <link rel="icon" href="DADVENTUREICON.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a href="#contenido-principal">Saltar al contenido principal</a>
+
+    <div class="barra-superior">
+      <div class="contenedor">
+        <p>Impresiones, diseño, personalizados y tecnología en un solo lugar.</p>
+        <a href="#locales">
+          Elige tu local y comunícate por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <header class="cabecera" id="inicio">
+      <div class="contenedor cabecera__contenido">
+        <a class="marca" href="#inicio" aria-label="Ir al inicio de Adventure">
+          <img class="marca__logo" src="DADVENTUREICON.png" alt="Logo de Adventure" width="52" height="52">
+          <span class="marca__texto">
+            <strong>ADVENTURE</strong>
+            <small>Impresiones y tecnología</small>
+          </span>
+        </a>
+
+        <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="sr-only">Abrir menú</span>
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="menu-principal" class="navegacion" aria-label="Navegación principal">
+          <ul>
+            <li class="menu-desplegable">
+              <button class="menu-desplegable__boton" type="button" aria-expanded="false">Impresiones <span aria-hidden="true">⌄</span></button>
+              <div class="menu-desplegable__panel">
+                <a href="#servicios">Impresión de documentos</a><a href="#servicios">Banners y gigantografías</a><a href="#servicios">Viniles y stickers</a><a href="#servicios">Tarjetas y volantes</a>
+              </div>
+            </li>
+            <li class="menu-desplegable">
+              <button class="menu-desplegable__boton" type="button" aria-expanded="false">Productos <span aria-hidden="true">⌄</span></button>
+              <div class="menu-desplegable__panel menu-desplegable__panel--amplio">
+                <a href="#productos"><strong>🖱️ Mouse y teclados</strong><small>Accesorios para computadora</small></a>
+                <a href="#productos"><strong>🎧 Audífonos y parlantes</strong><small>Audio y entretenimiento</small></a>
+                <a href="#productos"><strong>🔌 Cables y cargadores</strong><small>USB, Tipo C y adaptadores</small></a>
+                <a href="#productos"><strong>🖨️ Tintas y útiles</strong><small>Impresión, colegio y oficina</small></a>
+              </div>
+            </li>
+            <li class="menu-desplegable">
+              <button class="menu-desplegable__boton" type="button" aria-expanded="false">Personalizados <span aria-hidden="true">⌄</span></button>
+              <div class="menu-desplegable__panel">
+                <a href="#personalizados">Tazas y tomatodos</a><a href="#personalizados">Llaveros personalizados</a><a href="#personalizados">Cuadros y recuerdos</a><a href="#personalizados">Regalos para eventos</a>
+              </div>
+            </li>
+            <li class="menu-desplegable">
+              <button class="menu-desplegable__boton navegacion__locales" type="button" aria-expanded="false">Nuestros locales <span aria-hidden="true">⌄</span></button>
+              <div class="menu-desplegable__panel menu-desplegable__panel--locales">
+                <a href="local-huaycan-1.html"><strong>Local 1 · Huaycán</strong><small>972 582 415</small></a>
+                <a href="local-huaycan-2.html"><strong>Local 2 · Huaycán</strong><small>965 218 983</small></a>
+                <a href="local-chaclacayo.html"><strong>Local 3 · Chaclacayo</strong><small>965 218 983</small></a>
+              </div>
+            </li>
+            <li><a href="#como-comprar">Cómo comprar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a class="boton boton--cabecera" href="#locales">
+          Elegir local
+        </a>
+      </div>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="buscador-catalogo" aria-label="Buscar productos y servicios">
+        <div class="contenedor">
+          <form class="buscador" role="search">
+            <div class="buscador__presentacion">
+              <span class="buscador__icono" aria-hidden="true">
+                <img src="lupa.png" alt="">
+              </span>
+              <div>
+                <label for="buscar">Encuentra lo que necesitas</label>
+                <p>Busca productos, impresiones y servicios de Adventure</p>
+              </div>
+            </div>
+            <div class="buscador__zona">
+              <div class="buscador__controles">
+                <input id="buscar" name="buscar" type="search" placeholder="Prueba: mouse, banner, sello o tinta" autocomplete="off">
+                <button class="buscador__boton-imagen" type="submit">
+                  <img src="buscar.png" alt="Buscar">
+                  <span class="solo-lectores">Buscar</span>
+                </button>
+              </div>
+              <div class="buscador__sugerencias" aria-label="Búsquedas sugeridas">
+                <button type="button" data-busqueda="mouse">Mouse</button>
+                <button type="button" data-busqueda="impresión">Impresiones</button>
+                <button type="button" data-busqueda="personalizados">Personalizados</button>
+                <button type="button" data-busqueda="sello">Sellos</button>
+              </div>
+              <p class="buscador__resultado" id="resultado-busqueda" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="portada-adventure" aria-label="Presentación principal de Adventure">
+        <div class="portada-adventure__contenedor">
+          <img
+            src="portadaadventure.png"
+            alt="Adventure: diseño, impresión, tecnología, artículos para diseño y trámites digitales"
+            width="1942"
+            height="809"
+          >
+        </div>
+      </section>
+
+      <section class="seccion seccion-locales" id="locales" aria-labelledby="titulo-locales">
+        <div class="contenedor">
+          <header class="encabezado-seccion encabezado-locales">
+            <p class="etiqueta">Adventure cerca de ti</p>
+            <h2 id="titulo-locales">Elige tu local Adventure</h2>
+            <p>Entra a la página de la sede que deseas visitar para conocer sus productos, servicios, promociones y datos de atención.</p>
+          </header>
+
+          <div class="rejilla-locales">
+            <article class="tarjeta-local">
+              <div class="tarjeta-local__foto tarjeta-local__foto--1" role="img" aria-label="Foto de Adventure Huaycán Local 1"></div>
+              <div class="tarjeta-local__contenido">
+                <span class="tarjeta-local__numero">01</span>
+                <p class="etiqueta">Sede Huaycán</p>
+                <h3>Adventure — Local 1</h3>
+                <p>Impresiones, diseños, publicidad, personalizados y productos disponibles en la primera sede.</p>
+                <a class="tarjeta-local__telefono" href="https://wa.me/51972582415?text=Hola%20Adventure,%20consulto%20por%20el%20Local%201" target="_blank" rel="noopener noreferrer">WhatsApp: 972 582 415</a>
+                <a class="boton boton--principal" href="local-huaycan-1.html">Entrar al Local 1</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-local">
+              <div class="tarjeta-local__foto tarjeta-local__foto--2" role="img" aria-label="Foto de Adventure Huaycán Local 2"></div>
+              <div class="tarjeta-local__contenido">
+                <span class="tarjeta-local__numero">02</span>
+                <p class="etiqueta">Sede Huaycán</p>
+                <h3>Adventure — Local 2</h3>
+                <p>Consulta los sectores, novedades, servicios y formas de contacto de la segunda sede.</p>
+                <a class="tarjeta-local__telefono" href="https://wa.me/51965218983?text=Hola%20Adventure,%20consulto%20por%20el%20Local%202" target="_blank" rel="noopener noreferrer">WhatsApp: 965 218 983</a>
+                <a class="boton boton--principal" href="local-huaycan-2.html">Entrar al Local 2</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-local">
+              <div class="tarjeta-local__foto tarjeta-local__foto--3" role="img" aria-label="Foto de Adventure Chaclacayo"></div>
+              <div class="tarjeta-local__contenido">
+                <span class="tarjeta-local__numero">03</span>
+                <p class="etiqueta">Sede Chaclacayo</p>
+                <h3>Adventure — Chaclacayo</h3>
+                <p>Revisa los productos, trabajos de impresión y servicios disponibles en esta sede.</p>
+                <a class="tarjeta-local__telefono" href="https://wa.me/51965218983?text=Hola%20Adventure,%20consulto%20por%20el%20Local%203%20de%20Chaclacayo" target="_blank" rel="noopener noreferrer">WhatsApp: 965 218 983</a>
+                <a class="boton boton--principal" href="local-chaclacayo.html">Entrar a Chaclacayo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion-productos" id="productos" aria-labelledby="titulo-productos">
+        <div class="contenedor">
+          <header class="encabezado-seccion encabezado-vitrina">
+            <div>
+              <p class="etiqueta">Tienda tecnológica Adventure</p>
+              <h2 id="titulo-productos">Productos destacados</h2>
+              <p>Equipos reales de nuestro catálogo con marca, modelo y precio.</p>
+            </div>
+            <div class="controles-vitrina" aria-label="Controles del carrusel de productos">
+              <button class="control-vitrina" type="button" data-carrusel="anterior" aria-label="Ver productos anteriores">←</button>
+              <button class="control-vitrina" type="button" data-carrusel="siguiente" aria-label="Ver productos siguientes">→</button>
+            </div>
+          </header>
+
+          <div class="rejilla-productos-destacados" id="vitrina-productos">
+            <article class="producto-destacado" data-busqueda="calculadora casio fx 350 ms 2 tecnología colegio oficina">
+              <div class="producto-destacado__imagen producto-destacado__imagen--verde">
+                <img src="producto-casio.png" alt="Calculadora Casio FX-350 MS 2">
+                <span class="producto-destacado__fallback" aria-hidden="true">🧮</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Calculadoras</span>
+                <p class="producto-destacado__marca">CASIO</p>
+                <h3>FX-350 MS 2</h3>
+                <p>Calculadora científica para colegio, instituto y universidad.</p>
+                <strong class="producto-destacado__precio">S/56.00</strong>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20la%20calculadora%20Casio%20FX-350%20MS%202" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="producto-destacado" data-busqueda="otg tipo c adaptador usb celular tecnología">
+              <div class="producto-destacado__imagen producto-destacado__imagen--amarillo">
+                <img src="producto-otg.png" alt="Adaptador OTG Tipo C">
+                <span class="producto-destacado__fallback" aria-hidden="true">🔌</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Adaptadores</span>
+                <p class="producto-destacado__marca">OTG</p>
+                <h3>Adaptador Tipo C</h3>
+                <p>Conecta memorias y accesorios USB directamente a tu celular.</p>
+                <strong class="producto-destacado__precio">S/10.90</strong>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20el%20OTG%20Tipo%20C" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="producto-destacado" data-busqueda="hub astrom 4 en 1 usb computadora laptop tecnología">
+              <div class="producto-destacado__imagen producto-destacado__imagen--azul">
+                <img src="producto-hub-astrom.png" alt="HUB Astrom USB 4 en 1">
+                <span class="producto-destacado__fallback" aria-hidden="true">🔗</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Accesorios</span>
+                <p class="producto-destacado__marca">ASTROM</p>
+                <h3>HUB USB 4 en 1</h3>
+                <p>Amplía un puerto USB y conecta varios dispositivos a la vez.</p>
+                <strong class="producto-destacado__precio">S/16.90</strong>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20el%20HUB%20Astrom%204%20en%201" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="producto-destacado" data-busqueda="estabilizador gtx corriente computadora protección tecnología">
+              <div class="producto-destacado__imagen producto-destacado__imagen--oscuro">
+                <img src="producto-estabilizador-gtx.png" alt="Estabilizador GTX">
+                <span class="producto-destacado__fallback" aria-hidden="true">⚡</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Protección eléctrica</span>
+                <p class="producto-destacado__marca">GTX</p>
+                <h3>Estabilizador</h3>
+                <p>Protege computadoras y equipos frente a variaciones eléctricas.</p>
+                <strong class="producto-destacado__precio">S/69.90</strong>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20el%20estabilizador%20GTX" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="producto-destacado" data-busqueda="game pad halion ha 7002 mando control gamer juego oferta">
+              <div class="producto-destacado__imagen producto-destacado__imagen--rojo">
+                <span class="producto-destacado__oferta">OFERTA</span>
+                <img src="producto-gamepad-halion.png" alt="Game Pad Halion HA-7002">
+                <span class="producto-destacado__fallback" aria-hidden="true">🎮</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Gaming</span>
+                <p class="producto-destacado__marca">HALION</p>
+                <h3>Game Pad HA-7002</h3>
+                <p>Control para disfrutar juegos en computadora con mayor comodidad.</p>
+                <div class="producto-destacado__precios"><strong class="producto-destacado__precio">S/29.90</strong><del>S/54.00</del></div>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20el%20Game%20Pad%20Halion%20HA-7002" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="producto-destacado" data-busqueda="audífono halion ha s2 sonido música oferta tecnología">
+              <div class="producto-destacado__imagen producto-destacado__imagen--azul">
+                <img src="producto-audifono-halion.png" alt="Audífono Halion HA-S2">
+                <span class="producto-destacado__fallback" aria-hidden="true">🎧</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Audio</span>
+                <p class="producto-destacado__marca">HALION</p>
+                <h3>Audífono HA-S2</h3>
+                <p>Audio cómodo para música, clases, llamadas y entretenimiento.</p>
+                <div class="producto-destacado__precios"><strong class="producto-destacado__precio">S/35.00</strong><del>S/59.00</del></div>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20el%20audífono%20Halion%20HA-S2" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="producto-destacado" data-busqueda="parlantes klip xtreme kss 310 sonido música oferta">
+              <div class="producto-destacado__imagen producto-destacado__imagen--morado">
+                <img src="producto-parlantes-klip.png" alt="Parlantes Klip Xtreme KSS-310">
+                <span class="producto-destacado__fallback" aria-hidden="true">🔊</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Audio</span>
+                <p class="producto-destacado__marca">KLIP XTREME</p>
+                <h3>Parlantes KSS-310</h3>
+                <p>Parlantes compactos para computadora, oficina o habitación.</p>
+                <div class="producto-destacado__precios"><strong class="producto-destacado__precio">S/29.90</strong><del>S/42.00</del></div>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20los%20parlantes%20Klip%20Xtreme%20KSS-310" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="producto-destacado" data-busqueda="teclado cybertel explorer gk1002 gamer computadora tecnología">
+              <div class="producto-destacado__imagen producto-destacado__imagen--naranja">
+                <img src="producto-teclado-cybertel.png" alt="Teclado Cybertel Explorer GK1002">
+                <span class="producto-destacado__fallback" aria-hidden="true">⌨️</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Gaming</span>
+                <p class="producto-destacado__marca">CYBERTEL</p>
+                <h3>Explorer GK1002</h3>
+                <p>Teclado para una experiencia cómoda de trabajo y juego.</p>
+                <strong class="producto-destacado__precio">S/123.00</strong>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20el%20teclado%20Cybertel%20Explorer%20GK1002" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="producto-destacado" data-busqueda="cooler vortex 2 ab 007 laptop ventilador tecnología">
+              <div class="producto-destacado__imagen producto-destacado__imagen--verde">
+                <img src="producto-cooler-vortex.png" alt="Cooler Vortex 2 AB-007">
+                <span class="producto-destacado__fallback" aria-hidden="true">❄️</span>
+              </div>
+              <div class="producto-destacado__contenido">
+                <span class="producto-destacado__etiqueta">Refrigeración</span>
+                <p class="producto-destacado__marca">VORTEX</p>
+                <h3>Cooler 2 AB-007</h3>
+                <p>Base con ventilación para ayudar a mantener fresca tu laptop.</p>
+                <strong class="producto-destacado__precio">S/43.00</strong>
+                <a href="https://wa.me/51972582415?text=Hola%20Adventure,%20deseo%20el%20Cooler%20Vortex%202%20AB-007" target="_blank" rel="noopener noreferrer">Comprar por WhatsApp</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="encabezado-categorias-productos">
+            <div>
+              <p class="etiqueta">Encuentra más</p>
+              <h3>Compra por categoría</h3>
+            </div>
+            <p>Consulta toda la variedad disponible en cada sector.</p>
+          </div>
+
+          <div class="lista-sectores">
+            <article class="sector-productos" id="tecnologia">
+              <header>
+                <span aria-hidden="true">💻</span>
+                <div>
+                  <h3>Tecnología y accesorios</h3>
+                  <p>Equipos y complementos para estudiar, trabajar y conectarte.</p>
+                </div>
+              </header>
+              <ul>
+                <li><a href="#">Mouse</a></li>
+                <li><a href="#">Teclados</a></li>
+                <li><a href="#">Cargadores</a></li>
+                <li><a href="#">Memorias USB</a></li>
+                <li><a href="#">Audífonos</a></li>
+                <li><a href="#">Parlantes</a></li>
+              </ul>
+            </article>
+
+            <article class="sector-productos" id="personalizados">
+              <header>
+                <span aria-hidden="true">🖼️</span>
+                <div>
+                  <h3>Regalos y personalizados</h3>
+                  <p>Detalles únicos para regalar, recordar o promocionar.</p>
+                </div>
+              </header>
+              <ul>
+                <li><a href="#">Cuadros</a></li>
+                <li><a href="#">Tazas</a></li>
+                <li><a href="#">Tomatodos</a></li>
+                <li><a href="#">Llaveros</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">Recuerdos</a></li>
+              </ul>
+            </article>
+
+            <article class="sector-productos" id="oficina">
+              <header>
+                <span aria-hidden="true">🖋️</span>
+                <div>
+                  <h3>Oficina e impresión</h3>
+                  <p>Artículos prácticos para tu negocio, estudio u oficina.</p>
+                </div>
+              </header>
+              <ul>
+                <li><a href="#">Sellos</a></li>
+                <li><a href="#">Tintas</a></li>
+                <li><a href="#">Papeles</a></li>
+                <li><a href="#">Micas</a></li>
+                <li><a href="#">Útiles</a></li>
+                <li><a href="#">Accesorios</a></li>
+              </ul>
+            </article>
+
+            <article class="sector-productos" id="entretenimiento">
+              <header>
+                <span aria-hidden="true">🛴</span>
+                <div>
+                  <h3>Entretenimiento y movilidad</h3>
+                  <p>Productos para disfrutar, moverte y compartir.</p>
+                </div>
+              </header>
+              <ul>
+                <li><a href="#">Scooters</a></li>
+                <li><a href="#">Patines</a></li>
+                <li><a href="#">Juegos</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Novedades</a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion-sectores" id="sectores" aria-labelledby="titulo-sectores">
+        <div class="contenedor">
+          <header class="encabezado-seccion">
+            <p class="etiqueta">Todo bien organizado</p>
+            <h2 id="titulo-sectores">Explora nuestros sectores</h2>
+            <p>Puedes cambiar los nombres, íconos y enlaces de estas categorías cuando definas el catálogo final.</p>
+          </header>
+
+          <div class="rejilla-categorias">
+            <a class="tarjeta-categoria" href="#servicios">
+              <span aria-hidden="true">🖨️</span>
+              <h3>Impresiones</h3>
+              <p>Documentos, volantes, tarjetas y más.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#publicidad">
+              <span aria-hidden="true">📣</span>
+              <h3>Publicidad</h3>
+              <p>Banners, gigantografías, viniles y letreros.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#diseno">
+              <span aria-hidden="true">🎨</span>
+              <h3>Diseño gráfico</h3>
+              <p>Diseños personalizados para cada ocasión.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#tecnologia">
+              <span aria-hidden="true">🖱️</span>
+              <h3>Tecnología</h3>
+              <p>Mouse, teclados, memorias y accesorios.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#personalizados">
+              <span aria-hidden="true">🎁</span>
+              <h3>Personalizados</h3>
+              <p>Cuadros, tazas, llaveros y regalos.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#oficina">
+              <span aria-hidden="true">🗂️</span>
+              <h3>Oficina e impresión</h3>
+              <p>Tintas, sellos, papelería y suministros.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#entretenimiento">
+              <span aria-hidden="true">🛴</span>
+              <h3>Entretenimiento</h3>
+              <p>Scooters, patines y otros productos.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#contacto">
+              <span aria-hidden="true">➕</span>
+              <h3>Otros servicios</h3>
+              <p>Consultas, trámites y soluciones especiales.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion--alternativa" id="servicios" aria-labelledby="titulo-servicios">
+        <div class="contenedor">
+          <header class="encabezado-seccion encabezado-seccion--con-enlace">
+            <div>
+              <p class="etiqueta">Impresión y publicidad</p>
+              <h2 id="titulo-servicios">Servicios más solicitados</h2>
+            </div>
+            <a href="#contacto">Consultar un trabajo especial</a>
+          </header>
+
+          <div class="rejilla-servicios">
+            <article class="tarjeta-servicio" id="publicidad">
+              <div class="tarjeta-servicio__imagen" aria-hidden="true">BANNER</div>
+              <div class="tarjeta-servicio__contenido">
+                <p class="tarjeta-servicio__categoria">Publicidad</p>
+                <h3>Banners y gigantografías</h3>
+                <p>Para eventos, negocios, campañas, colegios y celebraciones.</p>
+                <a href="https://wa.me/51972582415?text=Hola,%20deseo%20cotizar%20un%20banner" target="_blank" rel="noopener noreferrer">Cotizar servicio</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-servicio">
+              <div class="tarjeta-servicio__imagen" aria-hidden="true">VINIL</div>
+              <div class="tarjeta-servicio__contenido">
+                <p class="tarjeta-servicio__categoria">Publicidad</p>
+                <h3>Viniles y stickers</h3>
+                <p>Impresión y corte para vitrinas, productos, paredes y vehículos.</p>
+                <a href="https://wa.me/51972582415?text=Hola,%20deseo%20cotizar%20viniles%20o%20stickers" target="_blank" rel="noopener noreferrer">Cotizar servicio</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-servicio" id="diseno">
+              <div class="tarjeta-servicio__imagen" aria-hidden="true">DISEÑO</div>
+              <div class="tarjeta-servicio__contenido">
+                <p class="tarjeta-servicio__categoria">Diseño gráfico</p>
+                <h3>Diseños personalizados</h3>
+                <p>Volantes, tarjetas, invitaciones, logos, publicaciones y más.</p>
+                <a href="https://wa.me/51972582415?text=Hola,%20necesito%20un%20diseño%20personalizado" target="_blank" rel="noopener noreferrer">Solicitar diseño</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-servicio">
+              <div class="tarjeta-servicio__imagen" aria-hidden="true">IMPRESIÓN</div>
+              <div class="tarjeta-servicio__contenido">
+                <p class="tarjeta-servicio__categoria">Impresiones</p>
+                <h3>Documentos y trabajos</h3>
+                <p>Impresiones a color o blanco y negro en diferentes formatos.</p>
+                <a href="https://wa.me/51972582415?text=Hola,%20deseo%20realizar%20una%20impresión" target="_blank" rel="noopener noreferrer">Consultar impresión</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion--destacada" id="como-comprar" aria-labelledby="titulo-proceso">
+        <div class="contenedor">
+          <header class="encabezado-seccion">
+            <p class="etiqueta">Fácil y rápido</p>
+            <h2 id="titulo-proceso">Realiza tu pedido en 3 pasos</h2>
+          </header>
+
+          <ol class="pasos">
+            <li>
+              <span>1</span>
+              <h3>Cuéntanos qué necesitas</h3>
+              <p>Envíanos las medidas, cantidad, idea o archivo de referencia.</p>
+            </li>
+            <li>
+              <span>2</span>
+              <h3>Recibe tu cotización</h3>
+              <p>Te confirmamos opciones, precio y tiempo de preparación.</p>
+            </li>
+            <li>
+              <span>3</span>
+              <h3>Aprueba y recoge</h3>
+              <p>Preparamos tu pedido y te avisamos cuando esté listo.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="llamada-accion" aria-labelledby="titulo-accion">
+        <div class="contenedor llamada-accion__contenido">
+          <div>
+            <p class="etiqueta">¿Tienes una idea especial?</p>
+            <h2 id="titulo-accion">Te ayudamos a convertirla en un producto real</h2>
+            <p>Consulta por diseños, medidas, materiales, precios y tiempos de entrega.</p>
+          </div>
+          <a class="boton boton--principal" href="https://wa.me/51972582415?text=Hola%20Adventure,%20necesito%20ayuda%20con%20un%20pedido" target="_blank" rel="noopener noreferrer">
+            Hablar por WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie" id="contacto">
+      <div class="contenedor pie__rejilla">
+        <section>
+          <a class="marca marca--pie" href="#inicio">
+            <img class="marca__logo" src="DADVENTUREICON.png" alt="Logo de Adventure" width="52" height="52">
+            <span class="marca__texto">
+              <strong>ADVENTURE</strong>
+              <small>Impresiones y tecnología</small>
+            </span>
+          </a>
+          <p>Soluciones de impresión, diseño y productos para personas y negocios.</p>
+        </section>
+
+        <section>
+          <h2>Información</h2>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#como-comprar">Cómo comprar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Nuestras tiendas</h2>
+          <address>
+            <p><strong><a href="local-huaycan-1.html">Huaycán — Local 1</a></strong><br>Agregar dirección</p>
+            <p><strong><a href="local-huaycan-2.html">Huaycán — Local 2</a></strong><br>Agregar dirección</p>
+            <p><strong><a href="local-chaclacayo.html">Chaclacayo</a></strong><br>Agregar dirección</p>
+          </address>
+        </section>
+
+        <section>
+          <h2>Contáctanos</h2>
+          <ul>
+            <li><a href="tel:+51972582415">Local 1: 972 582 415</a></li>
+            <li><a href="tel:+51965218983">Locales 2 y 3: 965 218 983</a></li>
+            <li><a href="#locales">Elegir local para WhatsApp</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="contenedor pie__inferior">
+        <p>&copy; 2026 Adventure. Todos los derechos reservados.</p>
+        <nav aria-label="Enlaces legales">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </nav>
+      </div>
+    </footer>
+
+    <a class="whatsapp-flotante" href="#locales" aria-label="Elegir un local Adventure para contactar por WhatsApp">
+      Elegir local
+    </a>
+    <script src="script.js" defer></script>
+  </body>
+</html>
