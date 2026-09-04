@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adventure: impresiones, banners, viniles, diseños, personalizados, tecnología y productos para tu hogar o negocio.">
+    <meta name="theme-color" content="#15803d">
+
+    <title>Adventure | Impresiones, diseño y tecnología</title>
+
+    <!-- Archivos preparados para la siguiente etapa -->
+    <link rel="icon" href="DADVENTUREICON.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a href="#contenido-principal">Saltar al contenido principal</a>
+
+    <div class="barra-superior">
+      <div class="contenedor">
+        <p>Impresiones, diseño, personalizados y tecnología en un solo lugar.</p>
+        <a href="#locales">
+          Elige tu local y comunícate por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <header class="cabecera" id="inicio">
+      <div class="contenedor cabecera__contenido">
+        <a class="marca" href="#inicio" aria-label="Ir al inicio de Adventure">
+          <img class="marca__logo" src="DADVENTUREICON.png" alt="Logo de Adventure" width="52" height="52">
+          <span class="marca__texto">
+            <strong>ADVENTURE</strong>
+            <small>Impresiones y tecnología</small>
+          </span>
+        </a>
+
+        <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="sr-only">Abrir menú</span>
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="menu-principal" class="navegacion" aria-label="Navegación principal">
+          <ul>
+            <li class="menu-desplegable">
+              <button class="menu-desplegable__boton" type="button" aria-expanded="false">Impresiones <span aria-hidden="true">⌄</span></button>
+              <div class="menu-desplegable__panel">
+                <a href="#servicios">Impresión de documentos</a><a href="#servicios">Banners y gigantografías</a><a href="#servicios">Viniles y stickers</a><a href="#servicios">Tarjetas y volantes</a>
+              </div>
+            </li>
+            <li class="menu-desplegable">
+              <button class="menu-desplegable__boton" type="button" aria-expanded="false">Productos <span aria-hidden="true">⌄</span></button>
+              <div class="menu-desplegable__panel menu-desplegable__panel--amplio">
+                <a href="#productos"><strong>🖱️ Mouse y teclados</strong><small>Accesorios para computadora</small></a>
+                <a href="#productos"><strong>🎧 Audífonos y parlantes</strong><small>Audio y entretenimiento</small></a>
+                <a href="#productos"><strong>🔌 Cables y cargadores</strong><small>USB, Tipo C y adaptadores</small></a>
+                <a href="#productos"><strong>🖨️ Tintas y útiles</strong><small>Impresión, colegio y oficina</small></a>
+              </div>
+            </li>
+            <li class="menu-desplegable">
+              <button class="menu-desplegable__boton" type="button" aria-expanded="false">Personalizados <span aria-hidden="true">⌄</span></button>
+              <div class="menu-desplegable__panel">
+                <a href="#personalizados">Tazas y tomatodos</a><a href="#personalizados">Llaveros personalizados</a><a href="#personalizados">Cuadros y recuerdos</a><a href="#personalizados">Regalos para eventos</a>
+              </div>
+            </li>
+            <li class="menu-desplegable">
+              <button class="menu-desplegable__boton navegacion__locales" type="button" aria-expanded="false">Nuestros locales <span aria-hidden="true">⌄</span></button>
+              <div class="menu-desplegable__panel menu-desplegable__panel--locales">
+                <a href="local-huaycan-1.html"><strong>Local 1 · Huaycán</strong><small>972 582 415</small></a>
+                <a href="local-huaycan-2.html"><strong>Local 2 · Huaycán</strong><small>965 218 983</small></a>
+                <a href="local-chaclacayo.html"><strong>Local 3 · Chaclacayo</strong><small>974 569 098</small></a>
+              </div>
+            </li>
+            <li><a href="#como-comprar">Cómo comprar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a class="boton boton--cabecera" href="#locales">
+          Elegir local
+        </a>
+      </div>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="buscador-catalogo" aria-label="Buscar productos y servicios">
+        <div class="contenedor">
+          <form class="buscador" role="search">
+            <div class="buscador__presentacion">
+              <span class="buscador__icono" aria-hidden="true">
+                <img src="lupa.png" alt="">
+              </span>
+              <div>
+                <label for="buscar">Encuentra lo que necesitas</label>
+                <p>Busca productos, impresiones y servicios de Adventure</p>
+              </div>
+            </div>
+            <div class="buscador__zona">
+              <div class="buscador__controles">
+                <input id="buscar" name="buscar" type="search" placeholder="Prueba: mouse, banner, sello o tinta" autocomplete="off">
+                <button class="buscador__boton-imagen" type="submit">
+                  <img src="buscar.png" alt="Buscar">
+                  <span class="solo-lectores">Buscar</span>
+                </button>
+              </div>
+              <div class="buscador__sugerencias" aria-label="Búsquedas sugeridas">
+                <button type="button" data-busqueda="mouse">Mouse</button>
+                <button type="button" data-busqueda="impresión">Impresiones</button>
+                <button type="button" data-busqueda="personalizados">Personalizados</button>
+                <button type="button" data-busqueda="sello">Sellos</button>
+              </div>
+              <p class="buscador__resultado" id="resultado-busqueda" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="portada-categorias" aria-label="Servicios destacados de Adventure">
+        <div class="carrusel-categorias carrusel-categorias--portada" data-carrusel-categorias aria-label="Servicios destacados">
+          <div class="carrusel-categorias__ventana">
+            <div class="carrusel-categorias__pista">
+              <!-- Imagen horizontal: diseno1.png -->
+              <article class="categoria-publicidad categoria-publicidad--diseno-grafico" data-categoria-slide aria-label="Diseño gráfico">
+                <div class="categoria-publicidad__texto">
+                  <h3>Diseño gráfico</h3>
+                  <ul class="categoria-publicidad__detalles" aria-label="Servicios de diseño gráfico">
+                    <li>Logos</li>
+                    <li>Publicidad</li>
+                    <li>Redes sociales</li>
+                    <li>Diseños personalizados</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- Imagen horizontal: diseno2.png -->
+              <article class="categoria-publicidad categoria-publicidad--volantes" data-categoria-slide aria-label="Volantes">
+                <div class="categoria-publicidad__texto">
+                  <h3>Volantes</h3>
+                  <ul class="categoria-publicidad__detalles" aria-label="Tipos de volantes">
+                    <li>Publicitarios</li>
+                    <li>Promocionales</li>
+                    <li>Informativos</li>
+                    <li>Para eventos</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- Imagen horizontal: diseno3.png -->
+              <article class="categoria-publicidad categoria-publicidad--tarjetas" data-categoria-slide aria-label="Tarjetas">
+                <div class="categoria-publicidad__texto">
+                  <h3>Tarjetas</h3>
+                  <ul class="categoria-publicidad__detalles" aria-label="Tipos de tarjetas">
+                    <li>Presentación</li>
+                    <li>Invitaciones</li>
+                    <li>Personales</li>
+                    <li>Digitales</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- Imagen horizontal: diseno4.png -->
+              <article class="categoria-publicidad categoria-publicidad--disenos" id="personalizados" data-categoria-slide aria-label="Diseños personalizados">
+                <div class="categoria-publicidad__texto">
+                  <h3>Diseños personalizados</h3>
+                  <ul class="categoria-publicidad__detalles" aria-label="Diseños personalizados">
+                    <li>Para negocios</li>
+                    <li>Para eventos</li>
+                    <li>Para impresión</li>
+                    <li>A tu medida</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button class="carrusel-categorias__flecha carrusel-categorias__flecha--anterior" type="button" data-categoria-anterior aria-label="Ver categoría anterior">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button class="carrusel-categorias__flecha carrusel-categorias__flecha--siguiente" type="button" data-categoria-siguiente aria-label="Ver categoría siguiente">
+            <span aria-hidden="true">›</span>
+          </button>
+
+          <div class="carrusel-categorias__puntos" aria-label="Seleccionar categoría">
+            <button class="esta-activo" type="button" data-categoria-punto="0" aria-label="Mostrar Diseño gráfico" aria-current="true"></button>
+            <button type="button" data-categoria-punto="1" aria-label="Mostrar Volantes"></button>
+            <button type="button" data-categoria-punto="2" aria-label="Mostrar Tarjetas"></button>
+            <button type="button" data-categoria-punto="3" aria-label="Mostrar Diseños personalizados"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion-locales" id="locales" aria-labelledby="titulo-locales">
+        <div class="contenedor">
+          <header class="encabezado-seccion encabezado-locales">
+            <p class="etiqueta">Adventure cerca de ti</p>
+            <h2 id="titulo-locales">Elige tu local Adventure</h2>
+            <p>Entra a la página de la sede que deseas visitar para conocer sus productos, servicios, promociones y datos de atención.</p>
+          </header>
+
+          <div class="rejilla-locales">
+            <article class="tarjeta-local">
+              <div class="tarjeta-local__foto tarjeta-local__foto--1" role="img" aria-label="Foto de Adventure Huaycán Local 1"></div>
+              <div class="tarjeta-local__contenido">
+                <span class="tarjeta-local__numero">01</span>
+                <p class="etiqueta">Sede Huaycán</p>
+                <h3>Adventure — Local 1</h3>
+                <p>Impresiones, diseños, publicidad, personalizados y productos disponibles en la primera sede.</p>
+                <a class="tarjeta-local__telefono" href="https://wa.me/51972582415?text=Hola%20Adventure,%20consulto%20por%20el%20Local%201" target="_blank" rel="noopener noreferrer">WhatsApp: 972 582 415</a>
+                <a class="boton boton--principal" href="local-huaycan-1.html">Entrar al Local 1</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-local">
+              <div class="tarjeta-local__foto tarjeta-local__foto--2" role="img" aria-label="Foto de Adventure Huaycán Local 2"></div>
+              <div class="tarjeta-local__contenido">
+                <span class="tarjeta-local__numero">02</span>
+                <p class="etiqueta">Sede Huaycán</p>
+                <h3>Adventure — Local 2</h3>
+                <p>Consulta los sectores, novedades, servicios y formas de contacto de la segunda sede.</p>
+                <a class="tarjeta-local__telefono" href="https://wa.me/51965218983?text=Hola%20Adventure,%20consulto%20por%20el%20Local%202" target="_blank" rel="noopener noreferrer">WhatsApp: 965 218 983</a>
+                <a class="boton boton--principal" href="local-huaycan-2.html">Entrar al Local 2</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-local">
+              <div class="tarjeta-local__foto tarjeta-local__foto--3" role="img" aria-label="Foto de Adventure Chaclacayo"></div>
+              <div class="tarjeta-local__contenido">
+                <span class="tarjeta-local__numero">03</span>
+                <p class="etiqueta">Sede Chaclacayo</p>
+                <h3>Adventure — Chaclacayo</h3>
+                <p>Revisa los productos, trabajos de impresión y servicios disponibles en esta sede.</p>
+                <a class="tarjeta-local__telefono" href="https://wa.me/51974569098?text=Hola%20Adventure,%20consulto%20por%20el%20Local%203%20de%20Chaclacayo" target="_blank" rel="noopener noreferrer">WhatsApp: 974 569 098</a>
+                <a class="boton boton--principal" href="local-chaclacayo.html">Entrar a Chaclacayo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion-productos" id="productos" aria-labelledby="titulo-productos">
+        <div class="contenedor">
+          <header class="encabezado-seccion encabezado-vitrina">
+            <div>
+              <p class="etiqueta">Tienda Adventure</p>
+              <h2 id="titulo-productos">Nuestros productos</h2>
+              <p>Elige el producto que necesitas y consulta su disponibilidad.</p>
+            </div>
+          </header>
+
+          <div class="rejilla-productos-destacados" id="vitrina-productos">
+            <div class="fila-productos" aria-label="Fila 1 de productos destacados">
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--verde">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-01.png" alt="Producto 1"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 1</h3>
+                  <p>Descripción del producto 1.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--amarillo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-02.png" alt="Producto 2"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 2</h3>
+                  <p>Descripción del producto 2.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--azul">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-03.png" alt="Producto 3"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 3</h3>
+                  <p>Descripción del producto 3.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--naranja">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-04.png" alt="Producto 4"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 4</h3>
+                  <p>Descripción del producto 4.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--morado">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-05.png" alt="Producto 5"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 5</h3>
+                  <p>Descripción del producto 5.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--rojo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-06.png" alt="Producto 6"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 6</h3>
+                  <p>Descripción del producto 6.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--verde">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-07.png" alt="Producto 7"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 7</h3>
+                  <p>Descripción del producto 7.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--amarillo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-08.png" alt="Producto 8"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 8</h3>
+                  <p>Descripción del producto 8.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--azul">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-09.png" alt="Producto 9"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 9</h3>
+                  <p>Descripción del producto 9.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--naranja">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-10.png" alt="Producto 10"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 10</h3>
+                  <p>Descripción del producto 10.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--morado">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-11.png" alt="Producto 11"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 11</h3>
+                  <p>Descripción del producto 11.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="fila-productos" aria-label="Fila 2 de productos destacados">
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--rojo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-12.png" alt="Producto 12"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 12</h3>
+                  <p>Descripción del producto 12.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--verde">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-13.png" alt="Producto 13"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 13</h3>
+                  <p>Descripción del producto 13.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--amarillo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-14.png" alt="Producto 14"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 14</h3>
+                  <p>Descripción del producto 14.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--azul">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-15.png" alt="Producto 15"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 15</h3>
+                  <p>Descripción del producto 15.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--naranja">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-16.png" alt="Producto 16"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 16</h3>
+                  <p>Descripción del producto 16.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--morado">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-17.png" alt="Producto 17"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 17</h3>
+                  <p>Descripción del producto 17.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--rojo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-18.png" alt="Producto 18"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 18</h3>
+                  <p>Descripción del producto 18.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--verde">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-19.png" alt="Producto 19"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 19</h3>
+                  <p>Descripción del producto 19.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--amarillo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-20.png" alt="Producto 20"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 20</h3>
+                  <p>Descripción del producto 20.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--azul">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-21.png" alt="Producto 21"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 21</h3>
+                  <p>Descripción del producto 21.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--naranja">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-22.png" alt="Producto 22"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 22</h3>
+                  <p>Descripción del producto 22.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="fila-productos" aria-label="Fila 3 de productos destacados">
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--morado">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-23.png" alt="Producto 23"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 23</h3>
+                  <p>Descripción del producto 23.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--rojo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-24.png" alt="Producto 24"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 24</h3>
+                  <p>Descripción del producto 24.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--verde">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-25.png" alt="Producto 25"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 25</h3>
+                  <p>Descripción del producto 25.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--amarillo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-26.png" alt="Producto 26"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 26</h3>
+                  <p>Descripción del producto 26.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--azul">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-27.png" alt="Producto 27"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 27</h3>
+                  <p>Descripción del producto 27.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--naranja">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-28.png" alt="Producto 28"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 28</h3>
+                  <p>Descripción del producto 28.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--morado">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-29.png" alt="Producto 29"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 29</h3>
+                  <p>Descripción del producto 29.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--rojo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-30.png" alt="Producto 30"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 30</h3>
+                  <p>Descripción del producto 30.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--verde">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-31.png" alt="Producto 31"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 31</h3>
+                  <p>Descripción del producto 31.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--amarillo">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-32.png" alt="Producto 32"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 32</h3>
+                  <p>Descripción del producto 32.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+
+              <article class="producto-destacado producto-destacado--vacio" data-busqueda="">
+                <div class="producto-destacado__imagen producto-destacado__imagen--azul">
+                  <!-- Espacio vacío. Para agregar un producto, inserta aquí: <img src="producto-33.png" alt="Producto 33"> -->
+                  <span class="producto-destacado__fallback" aria-hidden="true">
+                    <span class="producto-destacado__suma">＋</span>
+                    <small>Espacio para producto</small>
+                  </span>
+                </div>
+
+                <div class="producto-destacado__contenido">
+                  <span class="producto-destacado__etiqueta">Producto</span>
+                  <p class="producto-destacado__marca">ADVENTURE</p>
+                  <h3>Producto 33</h3>
+                  <p>Descripción del producto 33.</p>
+                  <strong class="producto-destacado__precio">Precio por consultar</strong>
+                  <a href="#locales">Consultar disponibilidad</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="seccion seccion-sectores" id="sectores" aria-labelledby="titulo-sectores">
+        <div class="contenedor">
+          <header class="encabezado-seccion">
+            <p class="etiqueta">Todo bien organizado</p>
+            <h2 id="titulo-sectores">Explora nuestros sectores</h2>
+            <p>Puedes cambiar los nombres, íconos y enlaces de estas categorías cuando definas el catálogo final.</p>
+          </header>
+
+          <div class="rejilla-categorias">
+            <a class="tarjeta-categoria" href="#servicios">
+              <span aria-hidden="true">🖨️</span>
+              <h3>Impresiones</h3>
+              <p>Documentos, volantes, tarjetas y más.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#publicidad">
+              <span aria-hidden="true">📣</span>
+              <h3>Publicidad</h3>
+              <p>Banners, gigantografías, viniles y letreros.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#diseno">
+              <span aria-hidden="true">🎨</span>
+              <h3>Diseño gráfico</h3>
+              <p>Diseños personalizados para cada ocasión.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#tecnologia">
+              <span aria-hidden="true">🖱️</span>
+              <h3>Tecnología</h3>
+              <p>Mouse, teclados, memorias y accesorios.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#personalizados">
+              <span aria-hidden="true">🎁</span>
+              <h3>Personalizados</h3>
+              <p>Cuadros, tazas, llaveros y regalos.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#oficina">
+              <span aria-hidden="true">🗂️</span>
+              <h3>Oficina e impresión</h3>
+              <p>Tintas, sellos, papelería y suministros.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#entretenimiento">
+              <span aria-hidden="true">🛴</span>
+              <h3>Entretenimiento</h3>
+              <p>Scooters, patines y otros productos.</p>
+            </a>
+
+            <a class="tarjeta-categoria" href="#contacto">
+              <span aria-hidden="true">➕</span>
+              <h3>Otros servicios</h3>
+              <p>Consultas, trámites y soluciones especiales.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion--alternativa" id="servicios" aria-labelledby="titulo-servicios">
+        <div class="contenedor">
+          <header class="encabezado-seccion encabezado-seccion--con-enlace">
+            <div>
+              <p class="etiqueta">Impresión y publicidad</p>
+              <h2 id="titulo-servicios">Servicios más solicitados</h2>
+            </div>
+            <a href="#contacto">Consultar un trabajo especial</a>
+          </header>
+
+          <div class="rejilla-servicios">
+            <article class="tarjeta-servicio" id="publicidad">
+              <div class="tarjeta-servicio__imagen" aria-hidden="true">BANNER</div>
+              <div class="tarjeta-servicio__contenido">
+                <p class="tarjeta-servicio__categoria">Publicidad</p>
+                <h3>Banners y gigantografías</h3>
+                <p>Para eventos, negocios, campañas, colegios y celebraciones.</p>
+                <a href="https://wa.me/51972582415?text=Hola,%20deseo%20cotizar%20un%20banner" target="_blank" rel="noopener noreferrer">Cotizar servicio</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-servicio">
+              <div class="tarjeta-servicio__imagen" aria-hidden="true">VINIL</div>
+              <div class="tarjeta-servicio__contenido">
+                <p class="tarjeta-servicio__categoria">Publicidad</p>
+                <h3>Viniles y stickers</h3>
+                <p>Impresión y corte para vitrinas, productos, paredes y vehículos.</p>
+                <a href="https://wa.me/51972582415?text=Hola,%20deseo%20cotizar%20viniles%20o%20stickers" target="_blank" rel="noopener noreferrer">Cotizar servicio</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-servicio" id="diseno">
+              <div class="tarjeta-servicio__imagen" aria-hidden="true">DISEÑO</div>
+              <div class="tarjeta-servicio__contenido">
+                <p class="tarjeta-servicio__categoria">Diseño gráfico</p>
+                <h3>Diseños personalizados</h3>
+                <p>Volantes, tarjetas, invitaciones, logos, publicaciones y más.</p>
+                <a href="https://wa.me/51972582415?text=Hola,%20necesito%20un%20diseño%20personalizado" target="_blank" rel="noopener noreferrer">Solicitar diseño</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-servicio">
+              <div class="tarjeta-servicio__imagen" aria-hidden="true">IMPRESIÓN</div>
+              <div class="tarjeta-servicio__contenido">
+                <p class="tarjeta-servicio__categoria">Impresiones</p>
+                <h3>Documentos y trabajos</h3>
+                <p>Impresiones a color o blanco y negro en diferentes formatos.</p>
+                <a href="https://wa.me/51972582415?text=Hola,%20deseo%20realizar%20una%20impresión" target="_blank" rel="noopener noreferrer">Consultar impresión</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion--destacada" id="como-comprar" aria-labelledby="titulo-proceso">
+        <div class="contenedor">
+          <header class="encabezado-seccion">
+            <p class="etiqueta">Fácil y rápido</p>
+            <h2 id="titulo-proceso">Realiza tu pedido en 3 pasos</h2>
+          </header>
+
+          <ol class="pasos">
+            <li>
+              <span>1</span>
+              <h3>Cuéntanos qué necesitas</h3>
+              <p>Envíanos las medidas, cantidad, idea o archivo de referencia.</p>
+            </li>
+            <li>
+              <span>2</span>
+              <h3>Recibe tu cotización</h3>
+              <p>Te confirmamos opciones, precio y tiempo de preparación.</p>
+            </li>
+            <li>
+              <span>3</span>
+              <h3>Aprueba y recoge</h3>
+              <p>Preparamos tu pedido y te avisamos cuando esté listo.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="llamada-accion" aria-labelledby="titulo-accion">
+        <div class="contenedor llamada-accion__contenido">
+          <div>
+            <p class="etiqueta">¿Tienes una idea especial?</p>
+            <h2 id="titulo-accion">Te ayudamos a convertirla en un producto real</h2>
+            <p>Consulta por diseños, medidas, materiales, precios y tiempos de entrega.</p>
+          </div>
+          <a class="boton boton--principal" href="https://wa.me/51972582415?text=Hola%20Adventure,%20necesito%20ayuda%20con%20un%20pedido" target="_blank" rel="noopener noreferrer">
+            Hablar por WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie" id="contacto">
+      <div class="contenedor pie__rejilla">
+        <section>
+          <a class="marca marca--pie" href="#inicio">
+            <img class="marca__logo" src="DADVENTUREICON.png" alt="Logo de Adventure" width="52" height="52">
+            <span class="marca__texto">
+              <strong>ADVENTURE</strong>
+              <small>Impresiones y tecnología</small>
+            </span>
+          </a>
+          <p>Soluciones de impresión, diseño y productos para personas y negocios.</p>
+        </section>
+
+        <section>
+          <h2>Información</h2>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#como-comprar">Cómo comprar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Nuestras tiendas</h2>
+          <address>
+            <p><strong><a href="local-huaycan-1.html">Huaycán — Local 1</a></strong><br>Av. José C. Mariátegui, lote 9, zona B</p>
+            <p><strong><a href="local-huaycan-2.html">Huaycán — Local 2</a></strong><br>Av. José C. Mariátegui, lote 3A, zona B</p>
+            <p><strong><a href="local-chaclacayo.html">Chaclacayo — Local 3</a></strong><br>Calle Los Cerezos 311</p>
+          </address>
+        </section>
+
+        <section>
+          <h2>Contáctanos</h2>
+          <ul>
+            <li><a href="tel:+51972582415">Local 1: 972 582 415</a></li>
+            <li><a href="tel:+51965218983">Local 2: 965 218 983</a></li>
+            <li><a href="tel:+51974569098">Local 3: 974 569 098</a></li>
+            <li><a href="#locales">Elegir local para WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/adventure.servicios/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/adventure.pe/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="contenedor pie__inferior">
+        <p>&copy; 2026 Adventure. Todos los derechos reservados.</p>
+        <nav aria-label="Enlaces legales">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </nav>
+      </div>
+    </footer>
+
+    <a class="whatsapp-flotante" href="#locales" aria-label="Elegir un local Adventure para contactar por WhatsApp">
+      Elegir local
+    </a>
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
