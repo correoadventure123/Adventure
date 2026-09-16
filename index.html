@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adventure: impresiones, banners, viniles, diseños, personalizados, tecnología y productos para tu hogar o negocio.">
+  <meta name="theme-color" content="#15803d">
+  <title>Adventure | Impresiones, diseño y tecnología</title>
+
+  <link rel="icon" href="DADVENTUREICON.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+<link rel="stylesheet" href="productos.css">
+<script src="productos.js" defer></script>
+</head>
+
+<body>
+  <a href="#contenido-principal">Saltar al contenido principal</a>
+
+  <div class="barra-superior">
+    <div class="contenedor">
+      <p>Impresiones, diseño, personalizados y tecnología en un solo lugar.</p>
+      <a href="#locales">Elige tu local y comunícate por WhatsApp</a>
+    </div>
+  </div>
+
+  <header class="cabecera" id="inicio">
+    <div class="contenedor cabecera__contenido">
+      <a class="marca" href="#inicio" aria-label="Ir al inicio de Adventure">
+        <img decoding="async" class="marca__logo" src="DADVENTUREICON.png" alt="Logo de Adventure" width="52" height="52">
+        <span class="marca__texto">
+          <strong>ADVENTURE</strong>
+          <small>Impresiones y tecnología</small>
+        </span>
+      </a>
+
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menú</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="menu-principal" class="navegacion" aria-label="Navegación principal">
+        <ul>
+          <li class="menu-desplegable">
+            <button class="menu-desplegable__boton" type="button" aria-expanded="false" aria-controls="menu-categoria-0">Impresión y diseño <span aria-hidden="true">⌄</span>
+            </button><div class="menu-desplegable__panel" id="menu-categoria-0">
+              <a href="#diseno-grafico">Diseño gráfico</a>
+              <a href="#volantes">Volantes</a>
+              <a href="#tarjetas">Tarjetas</a>
+              <a href="#disenos-personalizados">Diseños personalizados</a>
+            </div>
+          </li>
+
+          <li class="menu-desplegable">
+            <button class="menu-desplegable__boton" type="button" aria-expanded="false" aria-controls="menu-categoria-1">
+              Productos <span aria-hidden="true">⌄</span>
+            </button><div class="menu-desplegable__panel menu-desplegable__panel--amplio" id="menu-categoria-1">
+              <a href="#mouse-teclados">
+                <strong>🖱️ Mouse y teclados</strong>
+                <small>Accesorios para computadora</small>
+              </a>
+              <a href="#audifonos-parlantes">
+                <strong>🎧 Audífonos y parlantes</strong>
+                <small>Audio y entretenimiento</small>
+              </a>
+              <a href="#cables-cargadores">
+                <strong>🔌 Cables y cargadores</strong>
+                <small>USB, Tipo C y adaptadores</small>
+              </a>
+              <a href="#productos">
+                <strong>🖨️ Tintas y útiles</strong>
+                <small>Impresión, colegio y oficina</small>
+              </a>
+            </div>
+          </li>
+
+          <li class="menu-desplegable">
+            <button class="menu-desplegable__boton" type="button" aria-expanded="false" aria-controls="menu-categoria-2">
+              Personalizados <span aria-hidden="true">⌄</span>
+            </button><div class="menu-desplegable__panel" id="menu-categoria-2">
+              <a href="#tazas-tomatodos">Tazas y tomatodos</a>
+              <a href="#llaveros-personalizados">Llaveros personalizados</a>
+              <a href="#cuadros-recuerdos">Cuadros y recuerdos</a>
+              <a href="#regalos-eventos">Regalos para eventos</a>
+            </div>
+          </li>
+
+          <li class="menu-desplegable">
+            <button class="menu-desplegable__boton navegacion__locales" type="button" aria-expanded="false" aria-controls="menu-categoria-3">
+              Nuestros locales <span aria-hidden="true">⌄</span>
+            </button><div class="menu-desplegable__panel menu-desplegable__panel--locales" id="menu-categoria-3">
+              <a href="local-huaycan-1.html">
+                <strong>Local 1 · Huaycán</strong>
+                <small>972 582 415</small>
+              </a>
+              <a href="local-huaycan-2.html">
+                <strong>Local 2 · Huaycán</strong>
+                <small>965 218 983</small>
+              </a>
+              <a href="local-chaclacayo.html">
+                <strong>Local 3 · Chaclacayo</strong>
+                <small>974 569 098</small>
+              </a>
+            </div>
+          </li>
+
+          <li><a href="#como-comprar">Cómo pedir</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a class="boton boton--cabecera" href="#locales">Elegir local</a>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <h1 class="sr-only">Adventure: impresiones, diseño, tecnología y personalizados</h1>
+
+    <section class="portada-categorias" id="servicios" aria-label="Servicios destacados de Adventure">
+      <div class="carrusel-categorias carrusel-categorias--portada" data-carrusel-categorias aria-label="Servicios destacados">
+        <div class="carrusel-categorias__ventana">
+          <div class="carrusel-categorias__pista">
+
+            <!-- Imagen: diseno1.png -->
+            <article class="categoria-publicidad categoria-publicidad--diseno-grafico" id="diseno-grafico" data-categoria-slide aria-label="Diseño gráfico" tabindex="-1">
+              <a class="categoria-publicidad__texto categoria-publicidad__enlace" href="#locales" aria-label="Consultar diseño gráfico en un local" data-consulta="">
+                <h3>Diseño gráfico</h3>
+                <ul class="categoria-publicidad__detalles" aria-label="Servicios de diseño gráfico">
+                  <li>Logos</li>
+                  <li>Publicidad</li>
+                  <li>Redes sociales</li>
+                  <li>Diseños personalizados</li>
+                </ul>
+              </a>
+            </article>
+
+            <!-- Imagen: diseno2.png -->
+            <article class="categoria-publicidad categoria-publicidad--volantes" id="volantes" data-categoria-slide aria-label="Volantes" tabindex="-1">
+              <a class="categoria-publicidad__texto categoria-publicidad__enlace" href="#locales" aria-label="Consultar volantes en un local" data-consulta="">
+                <h3>Volantes</h3>
+                <ul class="categoria-publicidad__detalles" aria-label="Tipos de volantes">
+                  <li>Publicitarios</li>
+                  <li>Promocionales</li>
+                  <li>Informativos</li>
+                  <li>Para eventos</li>
+                </ul>
+              </a>
+            </article>
+
+            <!-- Imagen: diseno3.png -->
+            <article class="categoria-publicidad categoria-publicidad--tarjetas" id="tarjetas" data-categoria-slide aria-label="Tarjetas" tabindex="-1">
+              <a class="categoria-publicidad__texto categoria-publicidad__enlace" href="#locales" aria-label="Consultar tarjetas en un local" data-consulta="">
+                <h3>Tarjetas</h3>
+                <ul class="categoria-publicidad__detalles" aria-label="Tipos de tarjetas">
+                  <li>Presentación</li>
+                  <li>Invitaciones</li>
+                  <li>Personales</li>
+                  <li>Digitales</li>
+                </ul>
+              </a>
+            </article>
+
+            <!-- Imagen: diseno4.png -->
+            <article class="categoria-publicidad categoria-publicidad--disenos" id="disenos-personalizados" data-categoria-slide aria-label="Diseños personalizados" tabindex="-1">
+              <a class="categoria-publicidad__texto categoria-publicidad__enlace" href="#personalizados" aria-label="Ver productos personalizados">
+                <h3>Diseños personalizados</h3>
+                <ul class="categoria-publicidad__detalles" aria-label="Diseños personalizados">
+                  <li>Para negocios</li>
+                  <li>Para eventos</li>
+                  <li>Para impresión</li>
+                  <li>A tu medida</li>
+                </ul>
+              </a>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="carrusel-categorias__flecha carrusel-categorias__flecha--anterior" type="button" data-categoria-anterior aria-label="Ver categoría anterior">
+          <span aria-hidden="true">&lt;</span>
+        </button>
+
+        <button class="carrusel-categorias__flecha carrusel-categorias__flecha--siguiente" type="button" data-categoria-siguiente aria-label="Ver categoría siguiente">
+          <span aria-hidden="true">&gt;</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- LOCALES -->
+    <section class="seccion seccion-locales" id="locales" aria-labelledby="titulo-locales">
+      <div class="contenedor">
+        <header class="encabezado-seccion encabezado-locales">
+          <p class="etiqueta">Adventure cerca de ti</p>
+          <h2 id="titulo-locales">Elige tu local Adventure</h2>
+        </header>
+
+        <div class="rejilla-locales">
+          <article class="tarjeta-local">
+            <div class="tarjeta-local__foto tarjeta-local__foto--1" role="img" aria-label="Foto de Adventure Huaycán Local 1"></div>
+            <div class="tarjeta-local__contenido">
+              <p class="etiqueta">Sede Huaycán</p>
+              <h3>Adventure — Local 1</h3>
+              <a class="tarjeta-local__telefono" href="https://wa.me/51972582415?text=Hola%20Adventure,%20consulto%20por%20el%20Local%201" target="_blank" rel="noopener noreferrer">WhatsApp: 972 582 415</a>
+              <a class="boton boton--principal" href="local-huaycan-1.html">Entrar al Local 1</a>
+            </div>
+          </article>
+
+          <article class="tarjeta-local">
+            <div class="tarjeta-local__foto tarjeta-local__foto--2" role="img" aria-label="Foto de Adventure Huaycán Local 2"></div>
+            <div class="tarjeta-local__contenido">
+              <p class="etiqueta">Sede Huaycán</p>
+              <h3>Adventure — Local 2</h3>
+              <a class="tarjeta-local__telefono" href="https://wa.me/51965218983?text=Hola%20Adventure,%20consulto%20por%20el%20Local%202" target="_blank" rel="noopener noreferrer">WhatsApp: 965 218 983</a>
+              <a class="boton boton--principal" href="local-huaycan-2.html">Entrar al Local 2</a>
+            </div>
+          </article>
+
+          <article class="tarjeta-local">
+            <div class="tarjeta-local__foto tarjeta-local__foto--3" role="img" aria-label="Foto de Adventure Chaclacayo"></div>
+            <div class="tarjeta-local__contenido">
+              <p class="etiqueta">Sede Chaclacayo</p>
+              <h3>Adventure — Chaclacayo</h3>
+              <a class="tarjeta-local__telefono" href="https://wa.me/51974569098?text=Hola%20Adventure,%20consulto%20por%20el%20Local%203%20de%20Chaclacayo" target="_blank" rel="noopener noreferrer">WhatsApp: 974 569 098</a>
+              <a class="boton boton--principal" href="local-chaclacayo.html">Entrar a Chaclacayo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS: 3 FILAS DESLIZABLES -->
+    <section class="seccion seccion-productos" id="productos" aria-labelledby="titulo-productos"><div class="contenedor"><header class="encabezado-seccion"><p class="etiqueta">Tienda Adventure</p><h2 id="titulo-productos">Nuestros productos</h2><p>Explora las fotos y características. Consulta disponibilidad en tu local.</p></header><nav class="ad-category-links" aria-label="Categorías de productos"><a href="#mouse-teclados">Mouse y accesorios</a><a href="#audifonos-parlantes">Audífonos y parlantes</a><a href="#controles-gaming">Controles gaming</a><a href="#cables-cargadores">Cargadores</a><a href="#regalos-catalogo">Cuadros y regalos</a></nav><div class="rejilla-productos-destacados" id="vitrina-productos"><section class="ad-product-category" id="mouse-teclados" aria-labelledby="titulo-mouse-teclados"><h3 id="titulo-mouse-teclados">Mouse y accesorios</h3><div class="fila-productos" tabindex="0" role="region" aria-label="Mouse y accesorios; desliza para ver más"><article class="producto-destacado" data-busqueda="Mouse pad RGB FX108 CYBERTEL"><div class="ad-product-photo"><img src="assets/products/mousepad-cybertel-fx108-01.jpg" alt="Mouse pad RGB FX108" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/mousepad-cybertel-fx108-01.jpg","assets/products/mousepad-cybertel-fx108-02.jpg","assets/products/mousepad-cybertel-fx108-03.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Mouse pad RGB FX108">‹</button><span aria-live="polite">1 / 3</span><button type="button" data-photo="1" aria-label="Foto siguiente de Mouse pad RGB FX108">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Mouse pads</span><p class="producto-destacado__marca">CYBERTEL</p><h4>Mouse pad RGB FX108</h4><p>Mouse pad gamer extendido con iluminación RGB para cubrir teclado y mouse.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Iluminación LED RGB</li><li>Base de goma antideslizante</li><li>Recubrimiento textil resistente al uso y al agua</li><li>Medidas: 800 × 300 × 4 mm</li><li>Conexión USB y cable de 1.8 m</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Mouse pad XL XX33 MICRONICS"><div class="ad-product-photo"><img src="assets/products/mousepad-micronics-xx33-01.jpg" alt="Mouse pad XL XX33" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/mousepad-micronics-xx33-01.jpg","assets/products/mousepad-micronics-xx33-02.jpg","assets/products/mousepad-micronics-xx33-03.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Mouse pad XL XX33">‹</button><span aria-live="polite">1 / 3</span><button type="button" data-photo="1" aria-label="Foto siguiente de Mouse pad XL XX33">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Mouse pads</span><p class="producto-destacado__marca">MICRONICS</p><h4>Mouse pad XL XX33</h4><p>Superficie gamer extendida con bordes reforzados y diseño azul.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Medidas: 800 × 300 × 3 mm</li><li>Superficie resistente al agua y al polvo</li><li>Bordes remallados</li><li>Base de caucho antideslizante</li><li>Compatible con mouse óptico</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Mouse pad con gel H-02 GAUCHO"><div class="ad-product-photo"><img src="assets/products/mousepad-gel-h02-01.jpg" alt="Mouse pad con gel H-02" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/mousepad-gel-h02-01.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Mouse pad con gel H-02">‹</button><span aria-live="polite">1 / 1</span><button type="button" data-photo="1" aria-label="Foto siguiente de Mouse pad con gel H-02">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Mouse pads</span><p class="producto-destacado__marca">GAUCHO</p><h4>Mouse pad con gel H-02</h4><p>Mouse pad ergonómico con soporte de gel para la muñeca.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Soporte acolchado de gel</li><li>Diseño ergonómico</li><li>Base antideslizante</li><li>Superficie de seguimiento uniforme</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Mouse pad SIG X37 SIGMA"><div class="ad-product-photo"><img src="assets/products/mousepad-sigma-x37-01.jpg" alt="Mouse pad SIG X37" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/mousepad-sigma-x37-01.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Mouse pad SIG X37">‹</button><span aria-live="polite">1 / 1</span><button type="button" data-photo="1" aria-label="Foto siguiente de Mouse pad SIG X37">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Mouse pads</span><p class="producto-destacado__marca">SIGMA</p><h4>Mouse pad SIG X37</h4><p>Mouse pad gamer con gráfica de alto contraste y superficie amplia.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Superficie para mouse gaming</li><li>Diseño gráfico SIG X37</li><li>Formato rectangular</li><li>Presentación sellada</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Mouse G203 LIGHTSYNC LOGITECH G"><div class="ad-product-photo"><img src="assets/products/mouse-logitech-g203-01.jpg" alt="Mouse G203 LIGHTSYNC" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/mouse-logitech-g203-01.jpg","assets/products/mouse-logitech-g203-02.jpg","assets/products/mouse-logitech-g203-03.jpg","assets/products/mouse-logitech-g203-04.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Mouse G203 LIGHTSYNC">‹</button><span aria-live="polite">1 / 4</span><button type="button" data-photo="1" aria-label="Foto siguiente de Mouse G203 LIGHTSYNC">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Mouse gamer</span><p class="producto-destacado__marca">LOGITECH G</p><h4>Mouse G203 LIGHTSYNC</h4><p>Mouse gamer cableado con iluminación LIGHTSYNC personalizable.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Sensor de hasta 8,000 DPI</li><li>6 botones programables</li><li>Iluminación RGB LIGHTSYNC</li><li>Tasa de respuesta USB de 1 ms</li><li>Diseño clásico para gaming</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Mouse Norton MICRONICS"><div class="ad-product-photo"><img src="assets/products/mouse-micronics-norton-01.jpg" alt="Mouse Norton" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/mouse-micronics-norton-01.jpg","assets/products/mouse-micronics-norton-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Mouse Norton">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Mouse Norton">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Mouse</span><p class="producto-destacado__marca">MICRONICS</p><h4>Mouse Norton</h4><p>Mouse óptico USB de diseño limpio para trabajo y estudio.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Conexión USB</li><li>Sensibilidad de 1,000 DPI</li><li>Cuerpo de ABS</li><li>Compatible con Windows y otros sistemas</li><li>Disponible en blanco o negro</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Mouse gamer Murano MICRONICS"><div class="ad-product-photo"><img src="assets/products/mouse-micronics-murano-01.jpg" alt="Mouse gamer Murano" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/mouse-micronics-murano-01.jpg","assets/products/mouse-micronics-murano-02.jpg","assets/products/mouse-micronics-murano-03.jpg","assets/products/mouse-micronics-murano-04.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Mouse gamer Murano">‹</button><span aria-live="polite">1 / 4</span><button type="button" data-photo="1" aria-label="Foto siguiente de Mouse gamer Murano">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Mouse gamer</span><p class="producto-destacado__marca">MICRONICS</p><h4>Mouse gamer Murano</h4><p>Mouse gamer translúcido con iluminación RGB y alta resolución.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>7 botones</li><li>Resolución ajustable hasta 12,800 DPI</li><li>Iluminación LED RGB</li><li>Agarre lateral antideslizante</li><li>Cable USB textil de 1.5 m</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Mouse gamer Striker CYBERTEL"><div class="ad-product-photo"><img src="assets/products/mouse-cybertel-striker-01.jpg" alt="Mouse gamer Striker" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/mouse-cybertel-striker-01.jpg","assets/products/mouse-cybertel-striker-02.jpg","assets/products/mouse-cybertel-striker-03.jpg","assets/products/mouse-cybertel-striker-04.jpg","assets/products/mouse-cybertel-striker-05.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Mouse gamer Striker">‹</button><span aria-live="polite">1 / 5</span><button type="button" data-photo="1" aria-label="Foto siguiente de Mouse gamer Striker">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Mouse gamer</span><p class="producto-destacado__marca">CYBERTEL</p><h4>Mouse gamer Striker</h4><p>Mouse gamer de 7 botones con iluminación RGB y laterales antideslizantes.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>7 botones</li><li>DPI ajustable hasta 7,200</li><li>Iluminación LED RGB</li><li>Botones de avance y retroceso</li><li>Cable textil USB de 1.5 m</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article></div></section><section class="ad-product-category" id="audifonos-parlantes" aria-labelledby="titulo-audifonos-parlantes"><h3 id="titulo-audifonos-parlantes">Audífonos y parlantes</h3><div class="fila-productos" tabindex="0" role="region" aria-label="Audífonos y parlantes; desliza para ver más"><article class="producto-destacado" data-busqueda="Parlantes 2.0 S303 ENKORE"><div class="ad-product-photo"><img src="assets/products/parlantes-enkore-s303-01.jpg" alt="Parlantes 2.0 S303" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/parlantes-enkore-s303-01.jpg","assets/products/parlantes-enkore-s303-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Parlantes 2.0 S303">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Parlantes 2.0 S303">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Audio</span><p class="producto-destacado__marca">ENKORE</p><h4>Parlantes 2.0 S303</h4><p>Par de parlantes multimedia compactos para escritorio.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Sistema multimedia 2.0</li><li>Control de volumen en satélite</li><li>Conexión USB</li><li>Compatible con PC, laptop, TV y otros equipos de audio</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Parlantes RGB Titanium MICRONICS"><div class="ad-product-photo"><img src="assets/products/parlantes-micronics-s312-01.jpg" alt="Parlantes RGB Titanium" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/parlantes-micronics-s312-01.jpg","assets/products/parlantes-micronics-s312-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Parlantes RGB Titanium">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Parlantes RGB Titanium">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Audio</span><p class="producto-destacado__marca">MICRONICS</p><h4>Parlantes RGB Titanium</h4><p>Parlantes gamer 2.0 con iluminación RGB y control táctil.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Iluminación RGB con efecto respiración</li><li>Control táctil de luz</li><li>Entrada de audio de 3.5 mm</li><li>Alimentación por USB</li><li>Control de volumen integrado</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Parlantes RGB Challenger MICRONICS"><div class="ad-product-photo"><img src="assets/products/parlantes-micronics-s313-01.jpg" alt="Parlantes RGB Challenger" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/parlantes-micronics-s313-01.jpg","assets/products/parlantes-micronics-s313-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Parlantes RGB Challenger">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Parlantes RGB Challenger">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Audio</span><p class="producto-destacado__marca">MICRONICS</p><h4>Parlantes RGB Challenger</h4><p>Sistema de audio 2.0 con iluminación RGB y diseño gamer.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Iluminación LED RGB</li><li>Control táctil con 6 modos de iluminación</li><li>Entrada de audio de 3.5 mm</li><li>Alimentación USB</li><li>Cable de 1.5 m</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Headset Gamer S1 HALION"><div class="ad-product-photo"><img src="assets/products/audifonos-halion-s1-01.jpg" alt="Headset Gamer S1" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/audifonos-halion-s1-01.jpg","assets/products/audifonos-halion-s1-02.jpg","assets/products/audifonos-halion-s1-03.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Headset Gamer S1">‹</button><span aria-live="polite">1 / 3</span><button type="button" data-photo="1" aria-label="Foto siguiente de Headset Gamer S1">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Audífonos</span><p class="producto-destacado__marca">HALION</p><h4>Headset Gamer S1</h4><p>Audífonos gamer cerrados con micrófono y diadema ajustable.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Drivers de 40 mm</li><li>Micrófono integrado</li><li>Conector de 3.5 mm</li><li>Cable de 2.1 m</li><li>Diadema ajustable</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Headset Falcon 5.1 ENKORE"><div class="ad-product-photo"><img src="assets/products/audifonos-enkore-falcon-01.jpg" alt="Headset Falcon 5.1" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/audifonos-enkore-falcon-01.jpg","assets/products/audifonos-enkore-falcon-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Headset Falcon 5.1">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Headset Falcon 5.1">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Audífonos</span><p class="producto-destacado__marca">ENKORE</p><h4>Headset Falcon 5.1</h4><p>Audífonos USB con sonido envolvente 5.1 e iluminación multicolor.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Sonido envolvente 5.1</li><li>Iluminación LED rainbow</li><li>Micrófono flexible</li><li>Control de volumen y mute en línea</li><li>Cable textil de 2 m</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Headset Commander RGB CYBERTEL"><div class="ad-product-photo"><img src="assets/products/audifonos-cybertel-commander-01.jpg" alt="Headset Commander RGB" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/audifonos-cybertel-commander-01.jpg","assets/products/audifonos-cybertel-commander-02.jpg","assets/products/audifonos-cybertel-commander-03.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Headset Commander RGB">‹</button><span aria-live="polite">1 / 3</span><button type="button" data-photo="1" aria-label="Foto siguiente de Headset Commander RGB">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Audífonos</span><p class="producto-destacado__marca">CYBERTEL</p><h4>Headset Commander RGB</h4><p>Headset gamer USB con iluminación RGB y controles en la orejera.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Iluminación LED RGB</li><li>Micrófono flexible</li><li>Control de volumen y mute en orejera</li><li>Cable textil de 2 m</li><li>Conexión USB para audio y micrófono</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article></div></section><section class="ad-product-category" id="controles-gaming" aria-labelledby="titulo-controles-gaming"><h3 id="titulo-controles-gaming">Controles gaming</h3><div class="fila-productos" tabindex="0" role="region" aria-label="Controles gaming; desliza para ver más"><article class="producto-destacado" data-busqueda="Gamepad Fighter G103 CYBERTEL"><div class="ad-product-photo"><img src="assets/products/gamepad-cybertel-g103-01.jpg" alt="Gamepad Fighter G103" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/gamepad-cybertel-g103-01.jpg","assets/products/gamepad-cybertel-g103-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Gamepad Fighter G103">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Gamepad Fighter G103">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Controles</span><p class="producto-destacado__marca">CYBERTEL</p><h4>Gamepad Fighter G103</h4><p>Control alámbrico para PC con diseño ergonómico y vibración dual.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Conexión USB</li><li>Cable de 2 m</li><li>Vibración dual</li><li>Material ABS</li><li>Diseño ergonómico</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Gamepad inalámbrico HA-8011 HALION"><div class="ad-product-photo"><img src="assets/products/gamepad-halion-ha8011-01.jpg" alt="Gamepad inalámbrico HA-8011" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/gamepad-halion-ha8011-01.jpg","assets/products/gamepad-halion-ha8011-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Gamepad inalámbrico HA-8011">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Gamepad inalámbrico HA-8011">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Controles</span><p class="producto-destacado__marca">HALION</p><h4>Gamepad inalámbrico HA-8011</h4><p>Control inalámbrico para PC y Android con doble vibración.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Tecnología inalámbrica de 2.4 GHz</li><li>Alcance máximo de 10 m</li><li>Batería de 350 mAh</li><li>Doble vibración</li><li>Compatible con PC y Android TV</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Gamepad Bluetooth HA-7004 HALION"><div class="ad-product-photo"><img src="assets/products/gamepad-halion-ha7004-01.jpg" alt="Gamepad Bluetooth HA-7004" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/gamepad-halion-ha7004-01.jpg","assets/products/gamepad-halion-ha7004-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Gamepad Bluetooth HA-7004">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Gamepad Bluetooth HA-7004">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Controles</span><p class="producto-destacado__marca">HALION</p><h4>Gamepad Bluetooth HA-7004</h4><p>Control Bluetooth recargable con soporte para smartphone.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Conexión Bluetooth</li><li>Batería recargable de 350 mAh</li><li>Hasta 8 horas de uso indicado</li><li>Soporte retráctil para móvil</li><li>Compatible con Android, Windows e iOS</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article></div></section><section class="ad-product-category" id="cables-cargadores" aria-labelledby="titulo-cables-cargadores"><h3 id="titulo-cables-cargadores">Cargadores</h3><div class="fila-productos" tabindex="0" role="region" aria-label="Cargadores; desliza para ver más"><article class="producto-destacado" data-busqueda="Cargador Type-C RD-6039 REDD"><div class="ad-product-photo"><img src="assets/products/redd-rd6039-01.jpg" alt="Cargador Type-C RD-6039" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/redd-rd6039-01.jpg","assets/products/redd-rd6039-02.jpg","assets/products/redd-rd6039-03.jpg","assets/products/redd-rd6039-04.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Cargador Type-C RD-6039">‹</button><span aria-live="polite">1 / 4</span><button type="button" data-photo="1" aria-label="Foto siguiente de Cargador Type-C RD-6039">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Cargadores</span><p class="producto-destacado__marca">REDD</p><h4>Cargador Type-C RD-6039</h4><p>Cargador de pared con cable Type-C, pensado para uso diario y viajes.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Salida de hasta 4.8 A</li><li>Cable de datos Type-C incluido</li><li>Carga de voltaje y corriente constante</li><li>Protección contra sobrevoltaje y temperatura</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Turbo Power 66 W ROMAX"><div class="ad-product-photo"><img src="assets/products/romax-66w-01.jpg" alt="Turbo Power 66 W" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/romax-66w-01.jpg","assets/products/romax-66w-02.jpg","assets/products/romax-66w-03.jpg","assets/products/romax-66w-04.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Turbo Power 66 W">‹</button><span aria-live="polite">1 / 4</span><button type="button" data-photo="1" aria-label="Foto siguiente de Turbo Power 66 W">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Cargadores</span><p class="producto-destacado__marca">ROMAX</p><h4>Turbo Power 66 W</h4><p>Cargador USB de alta potencia con cable Type-C y sistemas de protección integrados.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Potencia máxima de 66 W</li><li>Salida indicada de 6.2 A</li><li>Incluye cable de datos Type-C</li><li>Protección contra sobrevoltaje, cortocircuito y temperatura</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Cargador Type-C 75 W REDD"><div class="ad-product-photo"><img src="assets/products/redd-rd6138c-01.jpg" alt="Cargador Type-C 75 W" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/redd-rd6138c-01.jpg","assets/products/redd-rd6138c-02.jpg","assets/products/redd-rd6138c-03.jpg","assets/products/redd-rd6138c-04.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Cargador Type-C 75 W">‹</button><span aria-live="polite">1 / 4</span><button type="button" data-photo="1" aria-label="Foto siguiente de Cargador Type-C 75 W">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Cargadores</span><p class="producto-destacado__marca">REDD</p><h4>Cargador Type-C 75 W</h4><p>Solución de carga rápida Type-C con diseño compacto y amplia compatibilidad.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Potencia máxima de 75 W</li><li>Salida máxima indicada de 7 A</li><li>Cable de datos USB-C incluido</li><li>Protección de temperatura y sobrevoltaje</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article></div></section><section class="ad-product-category" id="regalos-catalogo" aria-labelledby="titulo-regalos-catalogo"><h3 id="titulo-regalos-catalogo">Cuadros y regalos</h3><div class="fila-productos" tabindex="0" role="region" aria-label="Cuadros y regalos; desliza para ver más"><article class="producto-destacado" data-busqueda="Cuadro flor amarilla Personalizable"><div class="ad-product-photo"><img src="assets/products/cuadro-flor-amarilla-01.jpg" alt="Cuadro flor amarilla" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/cuadro-flor-amarilla-01.jpg","assets/products/cuadro-flor-amarilla-02.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Cuadro flor amarilla">‹</button><span aria-live="polite">1 / 2</span><button type="button" data-photo="1" aria-label="Foto siguiente de Cuadro flor amarilla">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Regalos</span><p class="producto-destacado__marca">Personalizable</p><h4>Cuadro flor amarilla</h4><p>Cuadro decorativo tipo caja con mensaje romántico y acabado blanco.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Diseño con flor amarilla</li><li>Mensaje personalizable</li><li>Formato vertical</li><li>Marco tipo caja con frente transparente</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Cuadro de girasoles Personalizable"><div class="ad-product-photo"><img src="assets/products/cuadro-girasoles-01.jpg" alt="Cuadro de girasoles" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/cuadro-girasoles-01.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Cuadro de girasoles">‹</button><span aria-live="polite">1 / 1</span><button type="button" data-photo="1" aria-label="Foto siguiente de Cuadro de girasoles">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Regalos</span><p class="producto-destacado__marca">Personalizable</p><h4>Cuadro de girasoles</h4><p>Composición decorativa para fotos y dedicatorias, inspirada en girasoles.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Espacio para fotografías</li><li>Dedicatoria personalizable</li><li>Composición floral amarilla</li><li>Marco de acabado madera</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Cuadro estilo racing Personalizable"><div class="ad-product-photo"><img src="assets/products/cuadro-hotwheels-01.jpg" alt="Cuadro estilo racing" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/cuadro-hotwheels-01.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Cuadro estilo racing">‹</button><span aria-live="polite">1 / 1</span><button type="button" data-photo="1" aria-label="Foto siguiente de Cuadro estilo racing">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Regalos</span><p class="producto-destacado__marca">Personalizable</p><h4>Cuadro estilo racing</h4><p>Diseño temático de velocidad ideal para regalar con una fotografía especial.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Temática automovilística</li><li>Fotografía personalizable</li><li>Frase decorativa incluida</li><li>Marco vertical de acabado claro</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article><article class="producto-destacado" data-busqueda="Portarretrato 6 × 8 Decoración"><div class="ad-product-photo"><img src="assets/products/portarretrato-6x8-01.jpg" alt="Portarretrato 6 × 8" width="600" height="450" loading="lazy"></div><div class="ad-photo-controls" data-images='["assets/products/portarretrato-6x8-01.jpg"]'><button type="button" data-photo="-1" aria-label="Foto anterior de Portarretrato 6 × 8">‹</button><span aria-live="polite">1 / 1</span><button type="button" data-photo="1" aria-label="Foto siguiente de Portarretrato 6 × 8">›</button></div><div class="producto-destacado__contenido"><span class="producto-destacado__etiqueta">Regalos</span><p class="producto-destacado__marca">Decoración</p><h4>Portarretrato 6 × 8</h4><p>Portarretrato clásico para fotografías de 15 × 20 cm.</p><details class="ad-product-specs"><summary>Ver características</summary><ul><li>Formato 6 × 8 pulgadas</li><li>Medida 15 × 20 cm</li><li>Diseño vertical</li><li>Marco negro con borde dorado</li></ul></details><a href="#locales" data-consulta="">Consultar disponibilidad</a></div></article></div></section></div></div></section>
+<section class="seccion" id="personalizados" aria-labelledby="titulo-personalizados"><div class="contenedor"><header class="encabezado-seccion"><h2 id="titulo-personalizados">Personalizados</h2></header><div class="ad-nav-grid"><article class="ad-nav-card" id="tazas-tomatodos" tabindex="-1"><div class="ad-category-placeholder"><img decoding="async" src="tazasytomatodos.png" alt="Tazas y tomatodos" width="279" height="209" loading="lazy" class="ad-pending-image"></div><h3>Tazas y tomatodos</h3><p>Consultar precio</p><a class="ad-button ad-button--light" href="#locales" data-consulta="">Consultar en un local</a></article>
+<article class="ad-nav-card" id="llaveros-personalizados" tabindex="-1"><div class="ad-category-placeholder"><img decoding="async" src="llaverospersonalizados.png" alt="Llaveros personalizados" width="279" height="209" loading="lazy" class="ad-pending-image"></div><h3>Llaveros personalizados</h3><p>Consultar precio</p><a class="ad-button ad-button--light" href="#locales" data-consulta="">Consultar en un local</a></article>
+<article class="ad-nav-card" id="cuadros-recuerdos" tabindex="-1"><div class="ad-category-placeholder"><img decoding="async" src="cuadrosyrecuerdos.png" alt="Cuadros y recuerdos" width="279" height="209" loading="lazy" class="ad-pending-image"></div><h3>Cuadros y recuerdos</h3><p>Consultar precio</p><a class="ad-button ad-button--light" href="#locales" data-consulta="">Consultar en un local</a></article>
+<article class="ad-nav-card" id="regalos-eventos" tabindex="-1"><div class="ad-category-placeholder"><img decoding="async" src="regalosparaeventos.png" alt="Regalos para eventos" width="279" height="209" loading="lazy" class="ad-pending-image"></div><h3>Regalos para eventos</h3><p>Consultar precio</p><a class="ad-button ad-button--light" href="#locales" data-consulta="">Consultar en un local</a></article></div></div></section>
+    <!-- SECTORES -->
+    <section class="seccion seccion-sectores" id="sectores" aria-labelledby="titulo-sectores">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Todo bien organizado</p>
+          <h2 id="titulo-sectores">Explora nuestros sectores</h2>
+          <p>Puedes cambiar los nombres, íconos y enlaces de estas categorías cuando definas el catálogo final.</p>
+        </header>
+
+        <div class="rejilla-categorias">
+          <a class="tarjeta-categoria" href="#servicios">
+            <span aria-hidden="true">🖨️</span>
+            <h3>Impresiones</h3>
+            <p>Documentos, volantes, tarjetas y más.</p>
+          </a>
+
+          <a class="tarjeta-categoria" href="#volantes">
+            <span aria-hidden="true">📣</span>
+            <h3>Publicidad</h3>
+            <p>Banners, gigantografías, viniles y letreros.</p>
+          </a>
+
+          <a class="tarjeta-categoria" href="#servicios">
+            <span aria-hidden="true">🎨</span>
+            <h3>Diseño gráfico</h3>
+            <p>Diseños personalizados para cada ocasión.</p>
+          </a>
+
+          <a class="tarjeta-categoria" href="#productos">
+            <span aria-hidden="true">🖱️</span>
+            <h3>Tecnología</h3>
+            <p>Mouse, teclados, memorias y accesorios.</p>
+          </a>
+
+          <a class="tarjeta-categoria" href="#personalizados">
+            <span aria-hidden="true">🎁</span>
+            <h3>Personalizados</h3>
+            <p>Cuadros, tazas, llaveros y regalos.</p>
+          </a>
+
+          <a class="tarjeta-categoria" href="#productos">
+            <span aria-hidden="true">🗂️</span>
+            <h3>Oficina e impresión</h3>
+            <p>Tintas, sellos, papelería y suministros.</p>
+          </a>
+
+          <a class="tarjeta-categoria" href="#audifonos-parlantes">
+            <span aria-hidden="true">🛴</span>
+            <h3>Entretenimiento</h3>
+            <p>Scooters, patines y otros productos.</p>
+          </a>
+
+          <a class="tarjeta-categoria" href="#contacto">
+            <span aria-hidden="true">➕</span>
+            <h3>Otros servicios</h3>
+            <p>Consultas, trámites y soluciones especiales.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO COMPRAR -->
+    <section class="seccion seccion--destacada" id="como-comprar" aria-labelledby="titulo-proceso">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Fácil y rápido</p>
+          <h2 id="titulo-proceso">Realiza tu pedido en 3 pasos</h2>
+        </header>
+
+        <ol class="pasos">
+          <li>
+            <span>1</span>
+            <h3>Cuéntanos qué necesitas</h3>
+            <p>Envíanos las medidas, cantidad, idea o archivo de referencia.</p>
+          </li>
+          <li>
+            <span>2</span>
+            <h3>Recibe tu cotización</h3>
+            <p>Te confirmamos opciones, precio y tiempo de preparación.</p>
+          </li>
+          <li>
+            <span>3</span>
+            <h3>Aprueba y recoge</h3>
+            <p>Preparamos tu pedido y te avisamos cuando esté listo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- IDEA ESPECIAL -->
+    <section class="llamada-accion" aria-labelledby="titulo-accion">
+      <div class="contenedor llamada-accion__contenido">
+        <div>
+          <p class="etiqueta">¿Tienes una idea especial?</p>
+          <h2 id="titulo-accion">Te ayudamos a convertirla en un producto real</h2>
+          <p>Consulta por diseños, medidas, materiales, precios y tiempos de entrega.</p>
+        </div>
+
+        <a class="boton boton--principal" href="https://wa.me/51972582415?text=Hola%20Adventure,%20necesito%20ayuda%20con%20un%20pedido" target="_blank" rel="noopener noreferrer">
+          Hablar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="pie" id="contacto">
+    <div class="contenedor pie__rejilla">
+
+      <section>
+        <a class="marca marca--pie" href="#inicio">
+          <img decoding="async" class="marca__logo" src="DADVENTUREICON.png" alt="Logo de Adventure" width="52" height="52">
+          <span class="marca__texto">
+            <strong>ADVENTURE</strong>
+            <small>Impresiones y tecnología</small>
+          </span>
+        </a>
+        <p>Soluciones de impresión, diseño y productos para personas y negocios.</p>
+      </section>
+
+      <section>
+        <h2>Información</h2>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#como-comprar">Cómo pedir</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Nuestras tiendas</h2>
+        <address>
+          <p>
+            <strong><a href="local-huaycan-1.html">Huaycán — Local 1</a></strong><br>
+            Av. José C. Mariátegui, lote 9, zona B
+          </p>
+          <p>
+            <strong><a href="local-huaycan-2.html">Huaycán — Local 2</a></strong><br>
+            Av. José C. Mariátegui, lote 3A, zona B
+          </p>
+          <p>
+            <strong><a href="local-chaclacayo.html">Chaclacayo — Local 3</a></strong><br>
+            Calle Los Cerezos 311
+          </p>
+        </address>
+      </section>
+
+      <section>
+        <h2>Contáctanos</h2>
+        <ul>
+          <li><a href="tel:+51972582415">Local 1: 972 582 415</a></li>
+          <li><a href="tel:+51965218983">Local 2: 965 218 983</a></li>
+          <li><a href="tel:+51974569098">Local 3: 974 569 098</a></li>
+          <li>
+            <a href="https://www.facebook.com/Dadventure.pe/" target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/adventure.pe/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+
+    <div class="contenedor pie__inferior">
+      <p>© 2026 Adventure. Todos los derechos reservados. Trabajo realizado en AdventureWeb.</p>
+      <nav aria-label="Enlaces legales"><a href="privacidad.html">Política de privacidad</a><a href="terminos-condiciones.html">Términos y condiciones</a><a href="libro-reclamaciones.html">Libro de Reclamaciones</a></nav></div>
+  </footer>
+
+  <a class="whatsapp-flotante" href="#locales" aria-label="Elegir un local Adventure para contactar por WhatsApp">
+    Elegir local
+  </a>
+</body>
+</html>
+
+
+
