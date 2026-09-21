@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0f6b45"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="robots" content="noindex">
+  <title>Libro de Reclamaciones | Adventure</title>
+  <meta name="description" content="Registra una queja o reclamo de consumo ante Adventure.">
+  <link rel="icon" href="DADVENTUREICON.png"><link rel="stylesheet" href="styles.css">
+</head>
+<body class="ad-legal ad-claims">
+  <a href="#contenido-principal">Saltar al contenido principal</a>
+  <header class="claims-header"><div class="contenedor claims-header__inner">
+    <a class="marca" href="index.html" aria-label="Adventure, página principal"><img decoding="async" class="marca__logo" src="DADVENTUREICON.png" alt="" width="52" height="52"><span class="marca__texto"><strong>ADVENTURE</strong><small>Impresiones y tecnología</small></span></a>
+    <a class="ad-button ad-button--light" href="index.html">Volver al catálogo</a>
+  </div></header>
+  <main id="contenido-principal" class="legal-shell claims-shell">
+    <div class="legal-hero"><p class="legal-kicker">Atención al consumidor</p><h1>Libro de Reclamaciones</h1><p>Completa esta hoja para presentar una queja o un reclamo. Recibirás un código de seguimiento y podrás guardar o imprimir una copia.</p><div class="legal-draft"><strong>Antes de publicar:</strong> confirma la razón social, el RUC y el domicilio legal en <code>config-reclamos.php</code>. El formulario permanece marcado como <code>noindex</code> hasta completar esos datos.</div></div>
+    <form class="claims-form" action="procesar-reclamo.php" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+      <input class="claims-trap" type="text" name="sitio_web" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <fieldset><legend>1. Identificación del establecimiento</legend><label>Local relacionado con tu compra o atención<select name="local" required><option value="">Selecciona un local</option><option value="huaycan-1">Huaycán · Local 1 — Av. José C. Mariátegui, lote 9, zona B</option><option value="huaycan-2">Huaycán · Local 2 — Av. José C. Mariátegui, lote 3A, zona B</option><option value="chaclacayo">Chaclacayo · Local 3 — Calle Los Cerezos 311</option></select></label></fieldset>
+      <fieldset><legend>2. Identificación del consumidor</legend><div class="claims-grid claims-grid--2"><label>Nombres y apellidos<input name="nombre" maxlength="120" autocomplete="name" required></label><label>Documento de identidad<input name="documento" maxlength="20" required></label><label>Correo electrónico<input type="email" name="correo" maxlength="160" autocomplete="email" required></label><label>Teléfono<input type="tel" name="telefono" maxlength="30" autocomplete="tel" required></label></div><label>Domicilio<input name="domicilio" maxlength="220" autocomplete="street-address" required></label><label class="claims-check"><input type="checkbox" name="menor" value="1"> El consumidor es menor de edad</label><label>Padre, madre o representante (si corresponde)<input name="representante" maxlength="120"></label></fieldset>
+      <fieldset><legend>3. Bien contratado y evidencias</legend><div class="claims-grid claims-grid--2"><label>Tipo<select name="tipo_bien" required><option value="">Selecciona</option><option value="producto">Producto</option><option value="servicio">Servicio</option></select></label><label>Monto reclamado (S/)<input type="number" name="monto" min="0" max="999999.99" step="0.01" inputmode="decimal" placeholder="0.00"></label></div><label>Descripción del producto o servicio<textarea name="descripcion_bien" maxlength="1200" rows="4" required></textarea></label><label>Comprobantes o evidencias (opcional)<input type="file" name="evidencias[]" accept=".jpg,.jpeg,.png,.webp,.pdf,image/jpeg,image/png,image/webp,application/pdf" multiple><small class="claims-help">Puedes adjuntar hasta 3 archivos JPG, PNG, WebP o PDF. Máximo 4 MB por archivo y 8 MB en total.</small></label></fieldset>
+      <fieldset><legend>4. Detalle de la reclamación y pedido</legend><div class="claims-choice" role="radiogroup" aria-label="Tipo de reclamación"><label><input type="radio" name="tipo_reclamacion" value="reclamo" required><span><strong>Reclamo</strong><small>Disconformidad con un producto o servicio.</small></span></label><label><input type="radio" name="tipo_reclamacion" value="queja" required><span><strong>Queja</strong><small>Malestar respecto de la atención al público.</small></span></label></div><label>Detalle de lo ocurrido<textarea name="detalle" maxlength="4000" rows="7" required></textarea></label><label>Pedido concreto del consumidor<textarea name="pedido" maxlength="2000" rows="5" required></textarea></label></fieldset>
+      <fieldset><legend>5. Confirmación</legend><label class="claims-check"><input type="checkbox" name="declaracion" value="1" required> Declaro que la información registrada es verdadera y solicito que esta hoja sea presentada al proveedor.</label><p class="claims-note">Los datos se usarán para registrar y atender tu reclamación. Revisa la <a href="privacidad.html">Política de privacidad</a>. Adventure debe responder por escrito en un plazo máximo de 15 días hábiles improrrogables.</p></fieldset>
+      <button class="ad-button claims-submit" type="submit">Registrar reclamación</button><p class="claims-note">Si el envío falla, escribe a <a href="mailto:correoadventure@gmail.com">correoadventure@gmail.com</a>. No envíes contraseñas ni datos bancarios. Consulta también la información oficial de <a href="https://consumidor.gob.pe/libro-de-reclamaciones/" target="_blank" rel="noopener noreferrer">Indecopi sobre el Libro de Reclamaciones</a>.</p>
+    </form>
+  </main>
+  <footer class="pie"><div class="contenedor pie__inferior"><p>© 2026 Adventure. Todos los derechos reservados. Trabajo realizado en AdventureWeb.</p><nav aria-label="Enlaces legales"><a href="privacidad.html">Política de privacidad</a><a href="terminos-condiciones.html">Términos y condiciones</a><a href="libro-reclamaciones.html" aria-current="page">Libro de Reclamaciones</a></nav></div></footer>
+</body></html>
+
+
+
+
